@@ -3,22 +3,20 @@
 \alias{RcppHyperDual}
 \docType{package}
 \title{
-What the package does (short line)
+  Rcpp Interface to Hyper-Dual Numbers
 }
 \description{
-More about what it does (maybe more than one line)
+  This package provides an interface to Hyper-Dual Numbers by Jeffrey Fike and Juan Alonson.
 }
 \details{
-An overview of how to use the package, including the most important functions
+  To be done.
 }
 \author{
-Your Name
+  Dirk Eddelbuettel
 
-Maintainer: Your Name <your@email.com>
-}
-\references{
+  Maintainer: Dirk Eddelbuettel <edd@debian.org>
 }
 \keyword{ package }
 \examples{
-   addHD( c(1,2,0,0), c(2,-1,0,1))
+   addHL( c(1,2,0,0), c(2,-1,0,1))
 }
