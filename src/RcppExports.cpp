@@ -5,15 +5,16 @@
 
 using namespace Rcpp;
 
-// addHD
-Rcpp::NumericVector addHD(Rcpp::NumericVector x, Rcpp::NumericVector y);
-RcppExport SEXP RcppHyperDual_addHD(SEXP xSEXP, SEXP ySEXP) {
+// addHL
+Rcpp::NumericVector addHL(Rcpp::NumericVector x, Rcpp::NumericVector y, bool verbose);
+RcppExport SEXP RcppHyperDual_addHL(SEXP xSEXP, SEXP ySEXP, SEXP verboseSEXP) {
 BEGIN_RCPP
     Rcpp::RObject __result;
     Rcpp::RNGScope __rngScope;
     Rcpp::traits::input_parameter< Rcpp::NumericVector >::type x(xSEXP);
     Rcpp::traits::input_parameter< Rcpp::NumericVector >::type y(ySEXP);
-    __result = Rcpp::wrap(addHD(x, y));
+    Rcpp::traits::input_parameter< bool >::type verbose(verboseSEXP);
+    __result = Rcpp::wrap(addHL(x, y, verbose));
     return __result;
 END_RCPP
 }
