@@ -1,0 +1,15 @@
+Package: RcppHyperDual
+Type: Package
+Title: Rcpp Interface to Hyper-Dual Numbers
+Version: 0.0.1
+Date: 2015-03-07
+Author: Dirk Eddelbuettel, Ravi Varadhan and Tim Triche
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Description: Hyper-Dual Numbers permit the exact calculation of second
+ derivatives which is both free of truncation and subtractive cancellation.
+ Hyper-Dual numbers were introduced Jeffrey Fike and Juan Alonson, and this
+ package uses a header-only C++ implementation by Fike and released under the
+ MIT license.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.0)
+LinkingTo: Rcpp

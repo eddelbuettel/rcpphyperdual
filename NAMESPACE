@@ -1,0 +1,3 @@
+useDynLib(RcppHyperDual)
+exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
