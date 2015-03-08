@@ -13,8 +13,8 @@
 #' @author Dirk Eddelbuettel
 #' @examples
 #'
-#' addHL( c(1,0,0,1), c(2,1,0,-1) )
-addHL <- function(x, y, verbose = FALSE) {
-    .Call('RcppHyperDual_addHL', PACKAGE = 'RcppHyperDual', x, y, verbose)
+#' addHD( c(1,0,0,1), c(2,1,0,-1) )
+addHD <- function(x, y, verbose = FALSE) {
+    .Call('RcppHyperDual_addHD', PACKAGE = 'RcppHyperDual', x, y, verbose)
 }
 

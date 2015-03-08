@@ -18,5 +18,5 @@
 }
 \keyword{ package }
 \examples{
-   addHL( c(1,2,0,0), c(2,-1,0,1))
+   addHD( c(1,2,0,0), c(2,-1,0,1))
 }
