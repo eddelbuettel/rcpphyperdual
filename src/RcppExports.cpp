@@ -5,16 +5,20 @@
 
 using namespace Rcpp;
 
-// addHL
-Rcpp::NumericVector addHL(Rcpp::NumericVector x, Rcpp::NumericVector y, bool verbose);
-RcppExport SEXP RcppHyperDual_addHL(SEXP xSEXP, SEXP ySEXP, SEXP verboseSEXP) {
+// addHD
+Rcpp::NumericVector addHD(Rcpp::NumericVector x, Rcpp::NumericVector y, bool verbose = false);
+RcppExport SEXP RcppHyperDual_addHD(SEXP xSEXP, SEXP ySEXP, SEXP verboseSEXP) {
 BEGIN_RCPP
-    Rcpp::RObject __result;
-    Rcpp::RNGScope __rngScope;
-    Rcpp::traits::input_parameter< Rcpp::NumericVector >::type x(xSEXP);
-    Rcpp::traits::input_parameter< Rcpp::NumericVector >::type y(ySEXP);
-    Rcpp::traits::input_parameter< bool >::type verbose(verboseSEXP);
-    __result = Rcpp::wrap(addHL(x, y, verbose));
-    return __result;
+    SEXP __sexp_result;
+    {
+        Rcpp::RNGScope __rngScope;
+        Rcpp::traits::input_parameter< Rcpp::NumericVector >::type x(xSEXP );
+        Rcpp::traits::input_parameter< Rcpp::NumericVector >::type y(ySEXP );
+        Rcpp::traits::input_parameter< bool >::type verbose(verboseSEXP );
+        Rcpp::NumericVector __result = addHD(x, y, verbose);
+        PROTECT(__sexp_result = Rcpp::wrap(__result));
+    }
+    UNPROTECT(1);
+    return __sexp_result;
 END_RCPP
 }

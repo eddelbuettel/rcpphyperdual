@@ -15,15 +15,15 @@
 //' @author Dirk Eddelbuettel
 //' @examples
 //'
-//' addHL( c(1,0,0,1), c(2,1,0,-1) )
+//' addHD( c(1,0,0,1), c(2,1,0,-1) )
 // [[Rcpp::export]]
-Rcpp::NumericVector addHL(Rcpp::NumericVector x, Rcpp::NumericVector y, bool verbose=false) {
+Rcpp::NumericVector addHD(Rcpp::NumericVector x, Rcpp::NumericVector y, bool verbose=false) {
 
     if (x.size() != 4) Rcpp::stop("First argument must be of length four.\n");
     if (y.size() != 4) Rcpp::stop("First argument must be of length four.\n");
 
-    hyperdual l(y[0], y[1], y[2], y[3]);
-    hyperdual r(x[0], x[1], x[2], x[3]);
+    hyperdual r(y[0], y[1], y[2], y[3]);
+    hyperdual l(x[0], x[1], x[2], x[3]);
 
     hyperdual z = l + r;
 
