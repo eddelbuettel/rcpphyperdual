@@ -9,7 +9,7 @@ Description: Hyper-Dual Numbers permit the exact calculation of second
  derivatives which is both free of truncation and subtractive cancellation.
  Hyper-Dual numbers were introduced Jeffrey Fike and Juan Alonson, and this
  package uses a header-only C++ implementation by Fike and released under the
- MIT license.
+ MIT license. Accurate 2nd derivatives computation.
 License: GPL (>= 2)
 Imports: Rcpp (>= 0.11.0)
 LinkingTo: Rcpp
